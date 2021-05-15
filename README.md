@@ -87,3 +87,6 @@ With reference to the above url, we use the scikit-learn wrapper to fine tune th
 ## Extended Study: `5153_Extended Studies.ipynb`
 
 This notebook contains the codes of the Extended Studies section, which focuses on analyzing the relationship between covid-relevant data and customers’ sentiments, as well as how aspect-based sentiment scores change over time.
+
+### 05_report_and_ppt 
+This folder contains the final project report and presentation slides. 
