@@ -8,10 +8,10 @@ Affected by the COVID-19 situation, the sales of masks on E-Commerce online shop
 
 Finally, business insights are drawn from customer reviews based on the aspect lables to support business operations. The proposed method is found to address the multi-label classification problem well, and can easily be extended to larger datasets, other products, other platforms or other industries for studying customer reviews.
 
-## Data Scrape: selenium_shopee_scrape.ipynb
-
-This file is used to scrape data related to mask from shopee webset https://shopee.sg.
-
+## Description of Project Folders
+### 00_Data
+The raw data in this projct, namely the customer reviews on masks, are scraped from Shopee's wedpages at https://shopee.sg.
+This folder contains the codes for data scraping (selenium_shopee_scrape.ipynb), and the original and processed data used in this project. 
 
 ## Stage 1: `5153-Stage1-Sentiment-Analysis-Final.ipynb`
 
