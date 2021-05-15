@@ -10,7 +10,11 @@ Finally, business insights are drawn from customer reviews based on the aspect l
 
 ## Description of Project Folders
 ### 00_data
-The raw data in this projct, namely the customer reviews on masks, are scraped from Shopee's wedpages at https://shopee.sg. This folder contains the codes for data scraping (selenium_shopee_scrape.ipynb), and the original and processed data used in this project. 
+The raw data in this projct, namely the customer reviews on masks, are scraped from Shopee's wedpages at https://shopee.sg. This folder contains the codes for data scraping and the original and processed data used in this project. 
+ - selenium_shopee_scrape.ipynb: codes for web data scraping.  
+ - data_all.xlsx: all the web scraped data.  
+ - data_with_content_below4.xlsx: customer reviews with ratings less than or equal to 4 stars (all).  
+ - data_with_content_below4_negative.xlsx: customer reviews with ratings less than or equal to 4 stars (only those containing negative sentiments).
 
 ## Stage 1: `5153-Stage1-Sentiment-Analysis-Final.ipynb`
 
