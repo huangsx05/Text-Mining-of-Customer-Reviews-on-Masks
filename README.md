@@ -5,6 +5,7 @@ Affected by the COVID-19 situation, the sales of masks on E-Commerce online shop
  - At Stage 1, a method based on sentiment analysis is used to separate negative and positive reviews. 
  - At Stage 2, a similarity-based method helps to cluster the negative reviews related to different aspects, namely delivery, product and service. 
  - At Stage 3, supervised machine learning models are developed to predict the aspect labels for the negative reviews.   
+
 Finally, business insights are drawn from customer reviews based on the aspect lables to support business operations. The proposed method is found to address the multi-label classification problem well, and can easily be extended to larger datasets, other products, other platforms or other industries for studying customer reviews.
 
 ## Data Scrape: selenium_shopee_scrape.ipynb
