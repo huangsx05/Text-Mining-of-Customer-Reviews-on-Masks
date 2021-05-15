@@ -41,27 +41,27 @@ The wordclouds with regards to 3 categories are generated to show the keywords o
 ### 03_supervised_learning  
 In this stage, we use different ML models to classify the reviews to three categories.
 
-*1) Bidirectional LSTM :   `5153-Stage3-model-bert-feature-lstm-final.ipynb`  
-This model uses Keras sequential model to do the multi-class, multi-label classification.
-The output unit is set to 3 with sigmoid activation, the loss function is BinaryCrossentropy, and Adam optimizer is used.
-DistillBert 1D features[CLS, avg], 2D features for both full sentences and pure negative comments are run in the file. 1D features with max values are excluded as results are not ideal. Bert features are excluded in this file as the results do not perform as well as the DistillBert Feature.  
-Comparing the results in the file, we found DistillBert 1D average feature and 2D features for pure negative comments show better results, and following models will use these features as input.  
-
-*2) `Base Model-knn: 5153-stage3-knn-final.ipynb`  
+ - Base Model-knn: `5153-stage3-knn-final.ipynb`  
 Three binary classifiction model are built for three categories (delivery, product, service), and grid search is set to find the best K value for each model.  
 This model uses the DistillBert 1D average features for the pure negative comments as features.  
 
-*3) `Base Model- NB: 5153-stage3-NB-final.ipynb`  
+ - Base Model- NB: `5153-stage3-NB-final.ipynb`  
 Three GaussianNB model is used for the binary classification for each category.  
 This model uses the DistillBert 1D average features for the pure negative comments as features.  
 
-*4) CNN & RNN Model :  `5153-Stage3-cnn-rnn-with-bert-2dvect.ipynb`   
+ - CNN & RNN Model :  `5153-Stage3-cnn-rnn-with-bert-2dvect.ipynb`   
                       `5153-Stage3-cnn-rnn-with-negative-bert-2dvect.ipynb`  
 The models use DistillBert 2D features as input. Both models are multi-class multi-label models. The output layer and loss function are same as LSTM model.  
 CNN Model : Three different size filters are used in the Conv1D layer, followed by max pooling and concatenation, then connencted to output layer.  
 RNN Model: A bidirectional RNN model is used in the analysis.  
 
-*5) Bert Fine Tune model: `5153-Stage3-model-bert-feature-lstm-final.ipynb`  
+ - Bidirectional LSTM :   `5153-Stage3-model-bert-feature-lstm-final.ipynb`  
+This model uses Keras sequential model to do the multi-class, multi-label classification.
+The output unit is set to 3 with sigmoid activation, the loss function is BinaryCrossentropy, and Adam optimizer is used.
+DistillBert 1D features[CLS, avg], 2D features for both full sentences and pure negative comments are run in the file. 1D features with max values are excluded as results are not ideal. Bert features are excluded in this file as the results do not perform as well as the DistillBert Feature.  
+Comparing the results in the file, we found DistillBert 1D average feature and 2D features for pure negative comments show better results, and following models will use these features as input.  
+
+ - Bert Fine Tune model: `5153-Stage3-model-bert-feature-lstm-final.ipynb`  
 reference source: https://github.com/charles9n/bert-sklearn  
 With reference to the above url, we use the scikit-learn wrapper to fine tune the Bert Model for the binary classification model for delivery, product and service, respectively.  
 
